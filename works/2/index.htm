@@ -1,0 +1,124 @@
+<html>
+
+
+<head>
+
+<title>Коптильня "ANUKA"</title>
+
+
+<link rel="shortcut icon" href="icon.ico" type="x-icon">
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta http-equiv="Content-Type" content="text/html;" align=center>
+        <style>
+            #myCanvas {
+                padding: 0 -50px;
+            }
+        </style>
+       <script>
+            function drawTextAlongArc(context, str, centerX, centerY, radius, angle){
+                context.save();
+                context.translate(centerX, centerY);
+                context.rotate(-1 * angle / 2);
+                context.rotate(-1 * (angle / str.length) / 2);
+                for (var n = 0; n < str.length; n++) {
+                    context.rotate(angle / str.length);
+                    context.save();
+                    context.translate(0, -1 * radius);
+                    var char = str[n];
+                    context.fillText(char, 0, 0);
+                    context.restore();
+                }
+                context.restore();
+            }
+            
+            window.onload = function(){
+                var canvas = document.getElementById("myCanvas");
+                var context = canvas.getContext("2d");
+                
+        
+                context.font = "60px Calibri";
+                context.textAlign = "top";
+                context.fillStyle = "#686868";
+                context.strokeStyle = "blue";
+                
+                var centerX = canvas.width / 2;
+                var centerY = canvas.height - 20;
+                var angle = Math.PI * 1; // radians
+                var radius = 300;
+                drawTextAlongArc(context, "Фермер,Дачник,Кулинар", centerX, centerY, radius, angle);
+                
+
+            };
+        </script>
+</head>
+    <body class="karkas" background="2.jpg" onmousedown="return false;">
+       <canvas id="myCanvas" width="900" height="400">
+        </canvas>
+
+
+<ul class="menu">
+    <li><a href="index.htm">Главная</a></li>
+    <li><a href="1.html">Историческая справка</a></li>
+    <li><a href="2.html">Способы копчения продуктов</a></li>
+    <li><a href="3.html">Особенности коптильни ANUKA</a></li>
+</ul>
+
+<center><font class="fack" style="font-family:Monotype Corsiva; font-size: 40px;" font color="#000" >Электробытовой аппарат гарячего копчения продуктов питания <b>АНУКА</b></font></center>
+
+<img src="6671.jpg" align=center Width=900 height=800>
+
+<div align=center style= "color:black"> <OBJECT CLASSID="clsid:22d6f312-b0f6-11d0-94ab-0080c74c7e95F" align=center
+     HEIGHT=480
+     WIDTH=640
+     NAME=Msshow1
+     ID=Msshow1>
+   <PARAM NAME="FileName" VALUE="">
+   <PARAM NAME="showControls" VALUE="true">
+   <PARAM NAME="PlayCount" VALUE="200">
+     <iframe src="https://www.youtube.com/embed/iDtOSRFgq60" width="640" height="480" frameborder="0"></iframe>
+
+</EMBED>
+
+</OBJECT> 
+</div></br>
+<div class="text">  
+<p>Электробытовой аппарат АНУКА
+является удобной, безопасной, эфективной, быстродействующей
+и надежной коптильней для горячего ("На жару") копчения.</p>
+
+<p>Пища готовится и коптится в собственном натуральном соку,
+сохраняя и усиливая натуральный аромат продукта,
+сохраняет влагу и преобретает и обеспечивает уникальный вкус копчености.</p>
+
+<p>Использование элэктроенергии для обоеспечения тления опилок
+является здоровой и безопасной альтернативой традиционному методу копчения
+с использованием жидкого горючего или открытого огня.</p>
+
+<p>Горячее копчение в коптильне АНУКА есть многократно доказаный и популярный путь
+для приготовления продуктов с малым содержанием жира, низким уровнем холистерина,
+а так же восхитительных подкопченных димом блюд
+без добавления соли, жира и масел(не счетая их
+использования в приготовленом маринаде)</p>
+
+<p>Рыба, моллюски, мясо, колбасы, сосиски, домашняя
+птица и дичь,
+а так же овощи, орехи и сыры - все они преобретают
+новые размеры
+и кулинарные изыски котрые в дольнейшем могут
+быть усилены
+с помощью оригинальных маринадов и вкусовых
+приправ.</p>
+
+<p>Аппарат АНУКА предоставляет большой выбор
+копченых продуктов которые могут заитересовать
+поваров - кулинаров,
+домохозяек, рыболовов, охотников, владельцев кофе,
+ресторанов и пивбаров.</p>
+
+</div>
+
+
+</body>
+
+
+</html>
